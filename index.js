@@ -22,6 +22,7 @@ app.get("/set-cookie", (req, res) => {
     httpOnly: true,
     secure: true,
     sameSite: "None",
+    maxAge: 600000
   });
 
   res.json({ message: "Cookie set from B.com!" });
