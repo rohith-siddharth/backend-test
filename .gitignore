@@ -1,0 +1,64 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.log
+logfile.log
+
+# Build artifacts
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.dynamodb
+
+# Temporary files
+tmp/
+temp/
+.cache/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.ps1
+*.sw?
+
+# Testing
+jest/
+jest-cache/
+jest-coverage/
+.nyc_output/
+coverage/
