@@ -10,7 +10,7 @@ app.use(cookieParser());
 // CORS setup to allow A.com to make requests
 app.use(
   cors({
-    origin: "https://demo-adv-tau.vercel.app/", // Allow A.com to send requests
+    origin: true, // Allow A.com to send requests
     credentials: true, // Allow cookies to be sent
   })
 );
