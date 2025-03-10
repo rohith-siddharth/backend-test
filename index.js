@@ -27,6 +27,15 @@ app.get("/set-cookie", (req, res) => {
   res.json({ message: "Cookie set from B.com!" });
 });
 
+app.get("/check-cookie", (req, res) => {
+  const cookieValue = req.cookies.test_cookie; // Read the cookie from request
+  if (cookieValue) {
+    res.json({ message: "Cookie exists!", value: cookieValue });
+  } else {
+    res.json({ message: "No cookie found!" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Server running on https://B.com:${PORT}`);
 });
